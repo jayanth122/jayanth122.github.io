@@ -1,0 +1,126 @@
+@import "config";
+@import "menu";
+@import "skills";
+@import "timeline";
+@import "project";
+@import "type";
+* {
+  box-sizing: border-box;
+}
+body {
+  @include background();
+  background: $primary-color;
+  color: set-text-color($primary-color);
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+  &.lg-heading {
+    font-size: 6rem;
+  }
+  &.sm-heading {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, 2), 0.7);
+  }
+}
+
+a {
+  color: set-text-color($primary-color);
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+.text-secondary {
+  color: $secondary-color;
+}
+.text-black {
+  color: black;
+}
+main {
+  padding: 4rem;
+  height: 100%;
+  .icons {
+    margin-top: 1rem;
+    a {
+      i {
+        margin-bottom: 1.5rem;
+        margin-right: 0.23rem;
+      }
+      padding: 0.7rem;
+      &:hover {
+        color: $secondary-color;
+        @include ease-in-out();
+      }
+    }
+  }
+  &#home {
+    overflow: hidden;
+    h1 {
+      margin-top: 20vh;
+    }
+  }
+  &#about-me {
+    overflow: hidden;
+    h1 {
+      margin-top: 1vh;
+    }
+  }
+  &#my-work {
+    h1 {
+      margin-top: 1vh;
+      &.my-work {
+        font-size: 4rem;
+      }
+    }
+    h3 {
+      &.my-work {
+        font-size: 2rem;
+      }
+    }
+  }
+  &#my-experience {
+    h1 {
+      margin-top: 1vh;
+      &.my-experience {
+        font-size: 4rem;
+      }
+    }
+    h3 {
+      &.my-experience {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+.about-info {
+  padding: 20px;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-areas:
+    "bio bio"
+    "text-secondary text-secondary"
+    "skills1 skills2";
+  grid-template-columns: 1fr 1fr;
+}
+.bio {
+  font-size: 1.3rem;
+  grid-area: bio;
+}
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: lighten($primary-color, 10);
+  color: set-text-color($primary-color);
+  height: 60px;
+}
+@import "mobile";

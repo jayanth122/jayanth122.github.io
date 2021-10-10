@@ -1,0 +1,157 @@
+@include mediaXL {
+}
+@include mediaLg {
+}
+@include mediaMd {
+  main#home {
+    align-items: center;
+    text-align: center;
+    .lg-heading {
+      font-size: 4rem;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    .sm-heading {
+      font-size: 1.7rem;
+    }
+  }
+  main#about-me {
+    padding: 2rem;
+    align-items: center;
+    text-align: left;
+    h1 {
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 0.75rem;
+    }
+  }
+  main#my-work {
+    padding: 2rem;
+    align-items: center;
+    text-align: left;
+    h1 {
+      &.my-work {
+        font-size: 3rem;
+      }
+    }
+    h3 {
+      &.my-work {
+        font-size: 1.5rem;
+      }
+    }
+    p {
+      font-size: 0.7rem;
+    }
+  }
+  main#my-experience {
+    padding: 2rem;
+    align-items: center;
+    text-align: left;
+    h1 {
+      &.my-experience {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+    }
+    h3 {
+      &.my-experience {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(100%, 0, 0);
+    .nav-link {
+      font-size: 24px;
+    }
+  }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(-100%, 0, 0);
+    .portrait {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  .about-info {
+    grid-gap: 10px;
+    grid-template-areas:
+      "bio"
+      "text-secondary"
+      "skills1"
+      "skills2";
+    grid-template-columns: 1fr;
+  }
+  .project-card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 1.1rem 1.5rem;
+    background-color: lighten($primary-color, $amount: 15);
+    min-width: 70%;
+    max-height: 35;
+    margin: 4%;
+    padding: 0.2rem;
+    border-radius: 10px;
+    box-shadow: 0 0.7rem 4rem rgba($secondary-color, 0.2);
+  }
+  .project-card img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    padding: 0.4rem;
+    border-radius: 20px;
+  }
+  .project-date {
+    padding: 0rem 0.5rem;
+    display: block;
+    color: rgba(white, 0.5);
+    font-size: 0.5rem;
+    font-weight: 600;
+  }
+  .project-title {
+    font-size: 0.7rem;
+    padding: 0rem 0.5rem;
+    margin: 0.5rem 0 0.5rem;
+    text-transform: uppercase;
+    color: $secondary-color;
+  }
+  .project-info {
+    padding: 0rem 0.5rem;
+    margin: bottom 1.5rem;
+    font-size: 0.6rem;
+    color: rgba(white, 0.7);
+  }
+  .project-link {
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.2rem;
+    background-color: rgba($secondary-color, 0.4);
+    border-radius: 8rem;
+  }
+}
+@include mediaSm {
+  main#home h1 {
+    margin-top: 10vh;
+  }
+}
