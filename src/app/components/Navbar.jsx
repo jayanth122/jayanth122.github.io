@@ -24,43 +24,35 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
-      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
-        <Link
-          href={"/"}
-          className="text-2xl md:text-5xl text-white font-semibold"
-        >
-          LOGO
-        </Link>
-        <div className="mobile-menu block md:hidden">
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-black text-white"  style={{ fontFamily: "'sans-serif', 'Gill Sans'" }} >
+      <div className="flex items-center justify-between mx-auto px-6 py-6 w-full">
+        {/* Mobile menu button stays on the left */}
+        <div className="block md:hidden">
           {!navbarOpen ? (
-            <button
-              onClick={() => setNavbarOpen(true)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
-            >
-              <Bars3Icon className="h-5 w-5" />
+            <button onClick={() => setNavbarOpen(true)} className="text-xl p-3 flex items-center">
+              <Bars3Icon className="h-6 w-6" />
             </button>
           ) : (
-            <button
-              onClick={() => setNavbarOpen(false)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
-            >
-              <XMarkIcon className="h-5 w-5" />
+            <button onClick={() => setNavbarOpen(false)} className="text-xl p-3 flex items-center">
+              <XMarkIcon className="h-6 w-6" />
             </button>
           )}
         </div>
-        <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
+
+        {/* Navigation Links: Centered within the full width of the navbar */}
+        <div className="hidden md:flex w-full justify-center">
+          <ul className="flex space-x-4 items-center">
             {navLinks.map((link, index) => (
-              <li key={index}>
+              <li key={index} className="font-bold text-xl">
                 <NavLink href={link.path} title={link.title} />
               </li>
             ))}
           </ul>
         </div>
       </div>
-      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      {navbarOpen && <MenuOverlay links={navLinks} />}
     </nav>
+
   );
 };
 
