@@ -6,33 +6,33 @@ import { motion, useInView } from "framer-motion";
 const projectData = [
     {
         id: 1,
+        title: "DEFAI Chatbot CMS",
+        gitUrl: "https://defai.chat/",
+        image: "p3",
+    },
+    {
+        id: 2,
         title: "Digital Banking System",
         gitUrl: "https://github.com/jayanth122/tbdbank",
         image: "p3",
     },
     {
-        id: 2,
+        id: 3,
         title: "Image Analysis",
         gitUrl: "https://github.com/jayanth122/Image-Classification-using-CNN",
         image: "p2",
     },
     {
-        id: 3,
+        id: 4,
         title: "Sentiment Analysis",
         gitUrl: "https://github.com/jayanth122/Sentiment-Analysis-on-IMDB-Movie-Reviews",
         image: "p4",
     },
     {
-        id: 4,
+        id: 5,
         title: "Smart Gloves for Mute People",
         gitUrl: "https://github.com/jayanth122/smart-glove-for-mute-people",
         image: "p5",
-    },
-    {
-        id: 5,
-        title: "UMBRA",
-        gitUrl: "",
-        image: "p1",
     },
     {
         id: 6,
@@ -51,7 +51,7 @@ const ProjectSection = () => {
         animate: { y: 0, opacity: 1 },
     };
     return (
-        <section id="projects" style={{ fontFamily: "'sans-serif', 'Gill Sans'" }}>
+        <section id="projects">
             <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
                 My Projects
             </h2>

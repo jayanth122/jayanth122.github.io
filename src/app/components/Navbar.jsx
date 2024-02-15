@@ -24,7 +24,7 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-black text-white"  style={{ fontFamily: "'sans-serif', 'Gill Sans'" }} >
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-black text-white" >
       <div className="flex items-center justify-between mx-auto px-6 py-6 w-full">
         {/* Mobile menu button stays on the left */}
         <div className="block md:hidden">

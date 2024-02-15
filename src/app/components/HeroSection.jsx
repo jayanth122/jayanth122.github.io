@@ -6,8 +6,7 @@ const HeroSection = () => {
   return (
     <section className='lg:py-16'>
       <div className='grid grid-cols-1 sm:grid-cols-12'>
-        {/* Image container */}
-        <div className='col-span-12 place-self-center mb-10'> {/* Increased bottom margin */}
+        <div className='col-span-12 place-self-center mb-10'> 
           <div className='rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative overflow-clip mx-auto'>
             <Image src="/images/Hi.png"
               alt='Hi Memoji'
@@ -20,7 +19,7 @@ const HeroSection = () => {
         
         {/* Text container */}
         <div className='col-span-12 place-self-center text-center'>
-          <h1 className='text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold'  style={{ fontFamily: "'sans-serif', 'Gill Sans'" }}> {/* Typewriter font */}
+          <h1 className='text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold' >
             <span className='text-white bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-red-400'>Hello, I&apos;m{" "}</span><br/>
             <span className='text-white bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-red-400'>Jayanth Chennupati</span>
           </h1>

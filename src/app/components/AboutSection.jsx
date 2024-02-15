@@ -50,8 +50,9 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className='list-disc pl-6'>
-        <li><a href="https://www.credly.com/badges/0138781d-9481-4b1e-b7bb-9768614cd08d">IBM Master the Mainframe Challenge, 2020</a></li>
-        <li><a href="https://www.udemy.com/certificate/UC-c2e1003e-98a4-4a2a-9b2f-a55672f464a8/">Flutter & Dart - The Complete Flutter App Development Course, Udemy</a></li>
+        <li><a href="">Meta - Front-end Developer Professional Certificate, Coursera </a></li>
+        <li><a href="https://coursera.org/share/b1925ae06f00a6723f231886c62b55c5"> Google Cloud - Building Scalable Java Micro services with Spring Boot and Spring Cloud </a></li>
+        <li><a href="https://coursera.org/share/3f06155f6b85d0ed5a29b19134e42ea3"> Interactivity with JavaScript - University of Michigan, Coursera </a></li>
       </ul>
     )
   },
@@ -67,7 +68,7 @@ const AboutSection = () => {
   }
   // bg-gradient-to-br from-blue-600 via-purple-600 to-red-600
   return (
-    <section className='text-white py-10' id="about"  style={{ fontFamily: "'sans-serif', 'Gill Sans'" }}>
+    <section className='text-white py-16' id="about">
       <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 sm:px-16'>
         <Image className='rounded-full bg-[#181818]' src='/images/Mac.png' width={500} height={500} />
         <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
