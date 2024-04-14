@@ -5,22 +5,6 @@ import TabButton from './TabButton';
 import ReactGa from "react-ga";
 
 const TRACKING_ID = "G-1D31K13119";
-
-const loadGoogleAnalytics = () => {
-  if (process.env.NODE_ENV === 'production') {
-    const script = document.createElement('script');
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${TRACKING_ID}`;
-    script.async = true;
-    document.head.appendChild(script);
-
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', TRACKING_ID);
-  }
-};
-
 ReactGa.initialize(TRACKING_ID);
 const TAB_DATA = [
   {
@@ -80,10 +64,6 @@ const TAB_DATA = [
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
-  useEffect(() => {
-    loadGoogleAnalytics();
-  }, []);
-
   const handleTabChange = (id) => {
     startTransition(() => {
       setTab(id);
