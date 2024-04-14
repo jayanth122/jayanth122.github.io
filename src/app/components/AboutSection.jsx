@@ -2,10 +2,7 @@
 import React, { useTransition, useState } from 'react'
 import Image from 'next/image'
 import TabButton from './TabButton';
-import ReactGa from "react-ga";
 
-const TRACKING_ID = "G-1D31K13119";
-ReactGa.initialize(TRACKING_ID);
 const TAB_DATA = [
   {
     title: "Skills",
@@ -114,3 +111,4 @@ const AboutSection = () => {
 }
 
 export default AboutSection
+
