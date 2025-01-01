@@ -15,6 +15,8 @@ const TAB_DATA = [
         <li>Node.js</li>
         <li>MongoDB</li>
         <li>Docker</li>
+        <li>Kubernetes</li>
+        <li>Jenkins</li>
       </ul>
     )
   },
@@ -53,6 +55,9 @@ const TAB_DATA = [
         <li><a href="">Meta - Front-end Developer Professional Certificate, Coursera </a></li>
         <li><a href="https://coursera.org/share/b1925ae06f00a6723f231886c62b55c5"> Google Cloud - Building Scalable Java Micro services with Spring Boot and Spring Cloud </a></li>
         <li><a href="https://coursera.org/share/3f06155f6b85d0ed5a29b19134e42ea3"> Interactivity with JavaScript - University of Michigan, Coursera </a></li>
+        <li><a href="https://learn.microsoft.com/en-us/users/nagajayanthchennupati-6217/credentials/ecebae2620720766?ref=https%3A%2F%2Fwww.linkedin.com%2F"> Build a natural language processing solution with Azure AI Language - Microsoft Applied Skills </a></li>
+        <li><a href="https://learn.microsoft.com/en-us/users/nagajayanthchennupati-7702/credentials/ed57ebc3aa805a05?ref=https%3A%2F%2Fwww.linkedin.com%2F"> Create an intelligent document processing solution with Azure AI Document Intelligence
+ - Microsoft Applied Skills </a></li>
       </ul>
     )
   },
