@@ -15,6 +15,7 @@ const TAB_DATA = [
         <li>Node.js</li>
         <li>MongoDB</li>
         <li>Docker</li>
+        <li>Terraform</li>
         <li>Kubernetes</li>
         <li>Jenkins</li>
       </ul>
