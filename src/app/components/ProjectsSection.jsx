@@ -7,7 +7,7 @@ const projectData = [
     {
         id: 1,
         title: "DEFAI Chatbot CMS",
-        gitUrl: "https://defai.chat/",
+        gitUrl: "https://defai.digital/",
         image: "p3",
     },
     {
